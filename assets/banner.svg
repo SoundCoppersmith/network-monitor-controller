@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1420"/>
+      <stop offset="55%" stop-color="#0d1f2f"/>
+      <stop offset="100%" stop-color="#08131c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1ec9d8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1ec9d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nodeFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3be2e8"/>
+      <stop offset="100%" stop-color="#1a8fa0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2fd8e0" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#2fd8e0" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#2fd8e0" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="titleFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bfeff2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- faint grid -->
+  <g stroke="#1c3a48" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+    <line x1="800" y1="0" x2="800" y2="360"/>
+    <line x1="1100" y1="0" x2="1100" y2="360"/>
+  </g>
+
+  <!-- network graph on right -->
+  <g stroke="url(#lineGrad)" stroke-width="1.6" fill="none">
+    <path d="M 700 90 L 860 70"/>
+    <path d="M 700 90 L 830 150"/>
+    <path d="M 830 150 L 960 110"/>
+    <path d="M 830 150 L 900 230"/>
+    <path d="M 960 110 L 1080 90"/>
+    <path d="M 960 110 L 1050 190"/>
+    <path d="M 900 230 L 1050 190"/>
+    <path d="M 900 230 L 1000 290"/>
+    <path d="M 1050 190 L 1130 240"/>
+    <path d="M 830 150 L 750 220"/>
+    <path d="M 750 220 L 900 230"/>
+  </g>
+
+  <g>
+    <circle cx="700" cy="90" r="7" fill="url(#nodeFill)"/>
+    <circle cx="860" cy="70" r="5" fill="#3be2e8"/>
+    <circle cx="830" cy="150" r="9" fill="url(#nodeFill)"/>
+    <circle cx="960" cy="110" r="6" fill="#3be2e8"/>
+    <circle cx="900" cy="230" r="8" fill="url(#nodeFill)"/>
+    <circle cx="1080" cy="90" r="5" fill="#3be2e8"/>
+    <circle cx="1050" cy="190" r="7" fill="url(#nodeFill)"/>
+    <circle cx="1000" cy="290" r="5" fill="#3be2e8"/>
+    <circle cx="1130" cy="240" r="5" fill="#3be2e8"/>
+    <circle cx="750" cy="220" r="5" fill="#3be2e8"/>
+  </g>
+
+  <!-- traveling packets -->
+  <g fill="#7ff4ff">
+    <circle cx="780" cy="118" r="3.2"/>
+    <circle cx="895" cy="185" r="3.2"/>
+    <circle cx="1000" cy="150" r="3"/>
+    <circle cx="975" cy="255" r="3"/>
+  </g>
+
+  <!-- scanning beam accent -->
+  <rect x="640" y="20" width="2" height="320" fill="#2fd8e0" opacity="0.18"/>
+
+  <!-- packet capture bracket motif -->
+  <g stroke="#2fd8e0" stroke-width="2" opacity="0.55" fill="none">
+    <path d="M 660 40 L 640 40 L 640 70"/>
+    <path d="M 660 320 L 640 320 L 640 290"/>
+  </g>
+
+  <!-- left content -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="700" fill="url(#titleFade)">
+    <tspan x="60" y="150" textLength="640" lengthAdjust="spacingAndGlyphs">Microsoft Network</tspan>
+    <tspan x="60" y="222" textLength="330" lengthAdjust="spacingAndGlyphs">Monitor</tspan>
+  </text>
+
+  <text x="60" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9fd8de">
+    <tspan x="60" y="268" textLength="920" lengthAdjust="spacingAndGlyphs">Microsoft Network Monitor (Netmon) is a deprecated packet analyzer.</tspan>
+  </text>
+
+  <!-- small tag chip -->
+  <g>
+    <rect x="60" y="292" width="150" height="30" rx="15" fill="#0f2b34" stroke="#2fd8e0" stroke-width="1" opacity="0.9"/>
+    <text x="80" y="312" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#7ff4ff">Netmon · Legacy</text>
+  </g>
+</svg>
